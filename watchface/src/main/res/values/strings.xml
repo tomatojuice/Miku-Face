@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cyber Idol Watch Face</string>
+    <string name="watch_face_name">Cyber Idol Face</string>
+
+    <string name="menu_title">Select Character</string>
+
+    <string name="character_miku">Miku</string>
+    <string name="character_gumi">Gumi</string>
+
+    <string name="color_theme">Hand Color</string>
+    <string name="color_cyber">Cyber (Cyan &amp; Magenta)</string>
+    <string name="color_default">Classic (Pink &amp; Orange)</string>
+    <string name="color_neon">Neon (Blue &amp; Green)</string>
+    <string name="color_mono">Mono (White &amp; Gray)</string>
+    <string name="color_crimson">Crimson (Red &amp; Gold)</string>
+    <string name="color_toxic">Toxic (Purple &amp; Green)</string>
+
+    <string name="config_show_battery">Show Battery</string>
+    <string name="config_smooth_seconds">Smooth Seconds</string>
+</resources>

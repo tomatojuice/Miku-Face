@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature android:name="android.hardware.type.watch" />
+    <application
+        android:hasCode="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"> <meta-data
+        android:name="com.google.android.wearable.standalone"
+        android:value="true" />
+        <property
+            android:name="com.google.wear.watchface.format.version"
+            android:value="2" />
+        <meta-data
+            android:name="android.service.watchface.definition"
+            android:resource="@raw/watchface" />
+        <meta-data
+            android:name="com.google.wear.watchface.editor.info"
+            android:resource="@xml/watch_face_info" />
+    </application>
+</manifest>

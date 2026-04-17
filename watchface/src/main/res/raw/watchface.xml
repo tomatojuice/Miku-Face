@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WatchFace width="450" height="450">
+    <Metadata key="CLOCK_TYPE" value="ANALOG" />
+
+    <UserConfigurations>
+        <ListConfiguration
+            id="background_image"
+            displayName="@string/menu_title"
+            screenReaderText="@string/menu_title"
+            icon="@drawable/i_miku"
+            defaultValue="0">
+            <ListOption id="0" displayName="@string/character_miku" screenReaderText="@string/character_miku" icon="@drawable/i_miku" />
+            <ListOption id="1" displayName="@string/character_gumi" screenReaderText="@string/character_gumi" icon="@drawable/i_gumi" />
+        </ListConfiguration>
+
+        <ColorConfiguration
+            id="hand_theme"
+            displayName="@string/color_theme"
+            defaultValue="cyber_colors">
+            <ColorOption id="cyber_colors" displayName="@string/color_cyber" colors="#FF00FFFF #FFFF00FF #FFFFFF00" />
+            <ColorOption id="default_colors" displayName="@string/color_default" colors="#FFFF0080 #FFFF9900 #FFFFE600" />
+            <ColorOption id="neon_colors" displayName="@string/color_neon" colors="#FF00B2FF #FF00FF33 #FF80FF00" />
+            <ColorOption id="mono_colors" displayName="@string/color_mono" colors="#FFFFFFFF #FFCCCCCC #FF888888" />
+            <ColorOption id="crimson_colors" displayName="@string/color_crimson" colors="#FFFF0000 #FFFF8C00 #FFFFFF00" />
+            <ColorOption id="toxic_colors" displayName="@string/color_toxic" colors="#FF8A2BE2 #FF32CD32 #FF9400D3" />
+        </ColorConfiguration>
+
+        <BooleanConfiguration id="show_batt" displayName="@string/config_show_battery" defaultValue="FALSE" />
+        <BooleanConfiguration id="smooth_sec" displayName="@string/config_smooth_seconds" defaultValue="FALSE" />
+    </UserConfigurations>
+
+    <Scene backgroundColor="#000000">
+
+        <PartImage x="0" y="0" width="450" height="450" name="base_bg">
+            <Image resource="image_wave_mint" />
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+        </PartImage>
+
+        <ListConfiguration id="background_image">
+            <ListOption id="0">
+                <PartImage x="0" y="0" width="450" height="450" name="p_miku">
+                    <Image resource="miku" />
+                    <Variant mode="AMBIENT" target="alpha" value="0" />
+                </PartImage>
+            </ListOption>
+            <ListOption id="1">
+                <PartImage x="0" y="0" width="450" height="450" name="p_gumi">
+                    <Image resource="gumi" />
+                    <Variant mode="AMBIENT" target="alpha" value="0" />
+                </PartImage>
+            </ListOption>
+        </ListConfiguration>
+
+        <Group x="0" y="0" width="450" height="450" name="indices">
+            <Group name="idx_1" x="0" y="0" width="450" height="450" angle="0"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF004D"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_2" x="0" y="0" width="450" height="450" angle="30"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF4D00"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_3" x="0" y="0" width="450" height="450" angle="60"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF9900"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_4" x="0" y="0" width="450" height="450" angle="90"><PartImage x="215" y="10" width="20" height="12" tintColor="#FFE600"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_5" x="0" y="0" width="450" height="450" angle="120"><PartImage x="215" y="10" width="20" height="12" tintColor="#80FF00"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_6" x="0" y="0" width="450" height="450" angle="150"><PartImage x="215" y="10" width="20" height="12" tintColor="#00FF33"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_7" x="0" y="0" width="450" height="450" angle="180"><PartImage x="215" y="10" width="20" height="12" tintColor="#00FFB2"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_8" x="0" y="0" width="450" height="450" angle="210"><PartImage x="215" y="10" width="20" height="12" tintColor="#00B2FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_9" x="0" y="0" width="450" height="450" angle="240"><PartImage x="215" y="10" width="20" height="12" tintColor="#0033FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_10" x="0" y="0" width="450" height="450" angle="270"><PartImage x="215" y="10" width="20" height="12" tintColor="#8000FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_11" x="0" y="0" width="450" height="450" angle="300"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF00E6"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_12" x="0" y="0" width="450" height="450" angle="330"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF0080"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+        </Group>
+
+        <BooleanConfiguration id="show_batt">
+            <BooleanOption id="TRUE">
+                <Group name="battery_group" x="0" y="0" width="450" height="450">
+                    <PartDraw name="battery_bg" x="175" y="340" width="100" height="40">
+                        <RoundRectangle x="0" y="0" width="100" height="40" cornerRadiusX="20" cornerRadiusY="20">
+                            <Fill color="#BB000000" />
+                            <Stroke color="[CONFIGURATION.hand_theme.0]" thickness="2" />
+                        </RoundRectangle>
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </PartDraw>
+                    <PartText name="battery_value" x="175" y="340" width="100" height="40">
+                        <Text align="CENTER">
+                            <Font family="SYNC_TO_DEVICE" size="22" color="#FFFFFF" weight="BOLD">
+                                <Template>%s%%<Parameter expression="[BATTERY_PERCENT]" /></Template>
+                            </Font>
+                        </Text>
+                        <Variant mode="AMBIENT" target="alpha" value="128" />
+                    </PartText>
+                </Group>
+            </BooleanOption>
+        </BooleanConfiguration>
+
+        <BooleanConfiguration id="smooth_sec">
+            <BooleanOption id="TRUE">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <HourHand resource="hour_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
+                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                    </HourHand>
+
+                    <MinuteHand resource="min_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
+                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                    </MinuteHand>
+
+                    <SecondHand resource="sec_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                        <Sweep frequency="15" />
+                    </SecondHand>
+                </AnalogClock>
+            </BooleanOption>
+
+            <BooleanOption id="FALSE">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <HourHand resource="hour_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
+                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                    </HourHand>
+
+                    <MinuteHand resource="min_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
+                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                    </MinuteHand>
+
+                    <SecondHand resource="sec_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+                    </SecondHand>
+                </AnalogClock>
+            </BooleanOption>
+        </BooleanConfiguration>
+
+    </Scene>
+</WatchFace>
