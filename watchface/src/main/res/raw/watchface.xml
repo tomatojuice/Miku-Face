@@ -7,10 +7,17 @@
             id="background_image"
             displayName="@string/menu_title"
             screenReaderText="@string/menu_title"
-            icon="@drawable/i_miku"
+            icon="@drawable/i_miku_1"
             defaultValue="0">
-            <ListOption id="0" displayName="@string/character_miku" screenReaderText="@string/character_miku" icon="@drawable/i_miku" />
-            <ListOption id="1" displayName="@string/character_gumi" screenReaderText="@string/character_gumi" icon="@drawable/i_gumi" />
+            <ListOption id="0" displayName="@string/character_miku_1" screenReaderText="@string/character_miku_1" icon="@drawable/i_miku_1" />
+            <ListOption id="1" displayName="@string/character_miku_2" screenReaderText="@string/character_miku_2" icon="@drawable/i_miku_2" />
+            <ListOption id="2" displayName="@string/character_gumi_1" screenReaderText="@string/character_gumi_1" icon="@drawable/i_gumi_1" />
+            <ListOption id="3" displayName="@string/character_gumi_2" screenReaderText="@string/character_gumi_2" icon="@drawable/i_gumi_2" />
+            <ListOption id="4" displayName="@string/character_kaito" screenReaderText="@string/character_kaito" icon="@drawable/i_kaito" />
+            <ListOption id="5" displayName="@string/character_luka" screenReaderText="@string/character_luka" icon="@drawable/i_luka" />
+            <ListOption id="6" displayName="@string/character_rinren" screenReaderText="@string/character_rinren" icon="@drawable/i_rinren" />
+            <ListOption id="7" displayName="@string/character_teto" screenReaderText="@string/character_teto" icon="@drawable/i_teto" />
+            <ListOption id="8" displayName="@string/character_yukari" screenReaderText="@string/character_yukari" icon="@drawable/i_yukari" />
         </ListConfiguration>
 
         <ColorConfiguration
@@ -37,18 +44,15 @@
         </PartImage>
 
         <ListConfiguration id="background_image">
-            <ListOption id="0">
-                <PartImage x="0" y="0" width="450" height="450" name="p_miku">
-                    <Image resource="miku" />
-                    <Variant mode="AMBIENT" target="alpha" value="0" />
-                </PartImage>
-            </ListOption>
-            <ListOption id="1">
-                <PartImage x="0" y="0" width="450" height="450" name="p_gumi">
-                    <Image resource="gumi" />
-                    <Variant mode="AMBIENT" target="alpha" value="0" />
-                </PartImage>
-            </ListOption>
+            <ListOption id="0"><PartImage x="0" y="0" width="450" height="450" name="p_miku_1"><Image resource="miku_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="1"><PartImage x="0" y="0" width="450" height="450" name="p_miku_2"><Image resource="miku_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="2"><PartImage x="0" y="0" width="450" height="450" name="p_gumi_1"><Image resource="gumi_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="3"><PartImage x="0" y="0" width="450" height="450" name="p_gumi_2"><Image resource="gumi_2" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="4"><PartImage x="0" y="0" width="450" height="450" name="p_kaito"><Image resource="kaito" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="5"><PartImage x="0" y="0" width="450" height="450" name="p_luka"><Image resource="luka" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="6"><PartImage x="0" y="0" width="450" height="450" name="p_rinren"><Image resource="rinren" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="7"><PartImage x="0" y="0" width="450" height="450" name="p_teto"><Image resource="teto" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="8"><PartImage x="0" y="0" width="450" height="450" name="p_yukari"><Image resource="yukari" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
         </ListConfiguration>
 
         <Group x="0" y="0" width="450" height="450" name="indices">

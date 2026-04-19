@@ -5,8 +5,15 @@
 
     <string name="menu_title">Select Character</string>
 
-    <string name="character_miku">Miku</string>
-    <string name="character_gumi">Gumi</string>
+    <string name="character_miku_1">Miku 1</string>
+    <string name="character_miku_2">Miku 2</string>
+    <string name="character_gumi_1">Gumi 1</string>
+    <string name="character_gumi_2">Gumi 2</string>
+    <string name="character_kaito">Kaito</string>
+    <string name="character_luka">Luka</string>
+    <string name="character_rinren">Rin &amp; Len</string>
+    <string name="character_teto">Teto</string>
+    <string name="character_yukari">Yukari</string>
 
     <string name="color_theme">Hand Color</string>
     <string name="color_cyber">Cyber (Cyan &amp; Magenta)</string>
