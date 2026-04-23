@@ -18,6 +18,7 @@
             <ListOption id="6" displayName="@string/character_rinren" screenReaderText="@string/character_rinren" icon="@drawable/i_rinren" />
             <ListOption id="7" displayName="@string/character_teto" screenReaderText="@string/character_teto" icon="@drawable/i_teto" />
             <ListOption id="8" displayName="@string/character_yukari" screenReaderText="@string/character_yukari" icon="@drawable/i_yukari" />
+            <ListOption id="9" displayName="@string/character_una" screenReaderText="@string/character_una" icon="@drawable/i_una_1" />
         </ListConfiguration>
 
         <ColorConfiguration
@@ -30,6 +31,9 @@
             <ColorOption id="mono_colors" displayName="@string/color_mono" colors="#FFFFFFFF #FFCCCCCC #FF888888" />
             <ColorOption id="crimson_colors" displayName="@string/color_crimson" colors="#FFFF0000 #FFFF8C00 #FFFFFF00" />
             <ColorOption id="toxic_colors" displayName="@string/color_toxic" colors="#FF8A2BE2 #FF32CD32 #FF9400D3" />
+            <ColorOption id="sunset_colors" displayName="@string/color_sunset" colors="#FFFF7F50 #FF8A2BE2 #FFFFD700" />
+            <ColorOption id="aqua_colors" displayName="@string/color_aqua" colors="#FF00FFFF #FF1E90FF #FF00FA9A" />
+            <ColorOption id="voltage_colors" displayName="@string/color_voltage" colors="#FFFFE600 #FF00FFFF #FFADFF2F" />
         </ColorConfiguration>
 
         <BooleanConfiguration id="show_batt" displayName="@string/config_show_battery" defaultValue="FALSE" />
@@ -53,6 +57,7 @@
             <ListOption id="6"><PartImage x="0" y="0" width="450" height="450" name="p_rinren"><Image resource="rinren" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
             <ListOption id="7"><PartImage x="0" y="0" width="450" height="450" name="p_teto"><Image resource="teto" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
             <ListOption id="8"><PartImage x="0" y="0" width="450" height="450" name="p_yukari"><Image resource="yukari" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
+            <ListOption id="9"><PartImage x="0" y="0" width="450" height="450" name="p_una"><Image resource="una_1" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage></ListOption>
         </ListConfiguration>
 
         <Group x="0" y="0" width="450" height="450" name="indices">

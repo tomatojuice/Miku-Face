@@ -14,6 +14,7 @@
     <string name="character_rinren">Rin &amp; Len</string>
     <string name="character_teto">Teto</string>
     <string name="character_yukari">Yukari</string>
+    <string name="character_una">Una</string>
 
     <string name="color_theme">Hand Color</string>
     <string name="color_cyber">Cyber (Cyan &amp; Magenta)</string>
@@ -22,6 +23,9 @@
     <string name="color_mono">Mono (White &amp; Gray)</string>
     <string name="color_crimson">Crimson (Red &amp; Gold)</string>
     <string name="color_toxic">Toxic (Purple &amp; Green)</string>
+    <string name="color_sunset">Sunset (Orange &amp; Purple)</string>
+    <string name="color_aqua">Aqua (Teal &amp; Blue)</string>
+    <string name="color_voltage">Voltage (Yellow &amp; Cyan)</string>
 
     <string name="config_show_battery">Show Battery</string>
     <string name="config_smooth_seconds">Smooth Seconds</string>
