@@ -7,23 +7,25 @@
             id="background_image"
             displayName="@string/menu_title"
             screenReaderText="@string/menu_title"
-            icon="@drawable/i_miku_1"
+            icon="i_miku_1"
             defaultValue="0">
-            <ListOption id="0" displayName="@string/character_miku_1" screenReaderText="@string/character_miku_1" icon="@drawable/i_miku_1" />
-            <ListOption id="1" displayName="@string/character_miku_2" screenReaderText="@string/character_miku_2" icon="@drawable/i_miku_2" />
-            <ListOption id="2" displayName="@string/character_gumi_1" screenReaderText="@string/character_gumi_1" icon="@drawable/i_gumi_1" />
-            <ListOption id="3" displayName="@string/character_gumi_2" screenReaderText="@string/character_gumi_2" icon="@drawable/i_gumi_2" />
-            <ListOption id="4" displayName="@string/character_kaito" screenReaderText="@string/character_kaito" icon="@drawable/i_kaito" />
-            <ListOption id="5" displayName="@string/character_luka" screenReaderText="@string/character_luka" icon="@drawable/i_luka" />
-            <ListOption id="6" displayName="@string/character_rinren" screenReaderText="@string/character_rinren" icon="@drawable/i_rinren" />
-            <ListOption id="7" displayName="@string/character_teto" screenReaderText="@string/character_teto" icon="@drawable/i_teto" />
-            <ListOption id="8" displayName="@string/character_yukari" screenReaderText="@string/character_yukari" icon="@drawable/i_yukari" />
-            <ListOption id="9" displayName="@string/character_una" screenReaderText="@string/character_una" icon="@drawable/i_una_1" />
+            <ListOption id="0" displayName="@string/character_miku_1" screenReaderText="@string/character_miku_1" icon="i_miku_1" />
+            <ListOption id="1" displayName="@string/character_miku_2" screenReaderText="@string/character_miku_2" icon="i_miku_2" />
+            <ListOption id="2" displayName="@string/character_gumi_1" screenReaderText="@string/character_gumi_1" icon="i_gumi_1" />
+            <ListOption id="3" displayName="@string/character_gumi_2" screenReaderText="@string/character_gumi_2" icon="i_gumi_2" />
+            <ListOption id="4" displayName="@string/character_kaito" screenReaderText="@string/character_kaito" icon="i_kaito" />
+            <ListOption id="5" displayName="@string/character_luka" screenReaderText="@string/character_luka" icon="i_luka" />
+            <ListOption id="6" displayName="@string/character_rinren" screenReaderText="@string/character_rinren" icon="i_rinren" />
+            <ListOption id="7" displayName="@string/character_teto" screenReaderText="@string/character_teto" icon="i_teto" />
+            <ListOption id="8" displayName="@string/character_yukari" screenReaderText="@string/character_yukari" icon="i_yukari" />
+            <ListOption id="9" displayName="@string/character_una" screenReaderText="@string/character_una" icon="i_una_1" />
         </ListConfiguration>
 
         <ColorConfiguration
             id="hand_theme"
             displayName="@string/color_theme"
+            screenReaderText="@string/color_theme"
+            icon="i_miku_1"
             defaultValue="cyber_colors">
             <ColorOption id="cyber_colors" displayName="@string/color_cyber" colors="#FF00FFFF #FFFF00FF #FFFFFF00" />
             <ColorOption id="default_colors" displayName="@string/color_default" colors="#FFFF0080 #FFFF9900 #FFFFE600" />
@@ -36,8 +38,8 @@
             <ColorOption id="voltage_colors" displayName="@string/color_voltage" colors="#FFFFE600 #FF00FFFF #FFADFF2F" />
         </ColorConfiguration>
 
-        <BooleanConfiguration id="show_batt" displayName="@string/config_show_battery" defaultValue="FALSE" />
-        <BooleanConfiguration id="smooth_sec" displayName="@string/config_smooth_seconds" defaultValue="FALSE" />
+        <BooleanConfiguration id="show_batt" displayName="@string/config_show_battery" screenReaderText="@string/config_show_battery" icon="i_miku_1" defaultValue="FALSE" />
+        <BooleanConfiguration id="smooth_sec" displayName="@string/config_smooth_seconds" screenReaderText="@string/config_smooth_seconds" icon="i_miku_1" defaultValue="FALSE" />
     </UserConfigurations>
 
     <Scene backgroundColor="#000000">
@@ -61,18 +63,54 @@
         </ListConfiguration>
 
         <Group x="0" y="0" width="450" height="450" name="indices">
-            <Group name="idx_1" x="0" y="0" width="450" height="450" angle="0"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF004D"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_2" x="0" y="0" width="450" height="450" angle="30"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF4D00"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_3" x="0" y="0" width="450" height="450" angle="60"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF9900"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_4" x="0" y="0" width="450" height="450" angle="90"><PartImage x="215" y="10" width="20" height="12" tintColor="#FFE600"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_5" x="0" y="0" width="450" height="450" angle="120"><PartImage x="215" y="10" width="20" height="12" tintColor="#80FF00"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_6" x="0" y="0" width="450" height="450" angle="150"><PartImage x="215" y="10" width="20" height="12" tintColor="#00FF33"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_7" x="0" y="0" width="450" height="450" angle="180"><PartImage x="215" y="10" width="20" height="12" tintColor="#00FFB2"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_8" x="0" y="0" width="450" height="450" angle="210"><PartImage x="215" y="10" width="20" height="12" tintColor="#00B2FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_9" x="0" y="0" width="450" height="450" angle="240"><PartImage x="215" y="10" width="20" height="12" tintColor="#0033FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_10" x="0" y="0" width="450" height="450" angle="270"><PartImage x="215" y="10" width="20" height="12" tintColor="#8000FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_11" x="0" y="0" width="450" height="450" angle="300"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF00E6"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
-            <Group name="idx_12" x="0" y="0" width="450" height="450" angle="330"><PartImage x="215" y="10" width="20" height="12" tintColor="#FF0080"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage></Group>
+            <Group name="idx_1" x="0" y="0" width="450" height="450" angle="0">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#FF004D"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_2" x="0" y="0" width="450" height="450" angle="30">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#FF4D00"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_3" x="0" y="0" width="450" height="450" angle="60">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#FF9900"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_4" x="0" y="0" width="450" height="450" angle="90">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#FFE600"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_5" x="0" y="0" width="450" height="450" angle="120">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#80FF00"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_6" x="0" y="0" width="450" height="450" angle="150">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#00FF33"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_7" x="0" y="0" width="450" height="450" angle="180">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#00FFB2"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_8" x="0" y="0" width="450" height="450" angle="210">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#00B2FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_9" x="0" y="0" width="450" height="450" angle="240">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#0033FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_10" x="0" y="0" width="450" height="450" angle="270">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#8000FF"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_11" x="0" y="0" width="450" height="450" angle="300">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#FF00E6"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
+            <Group name="idx_12" x="0" y="0" width="450" height="450" angle="330">
+                <PartImage x="217" y="12" width="20" height="12"><Image resource="index_stick_short_medium_shadow" /><Variant mode="AMBIENT" target="alpha" value="0" /></PartImage>
+                <PartImage x="215" y="10" width="20" height="12" tintColor="#FF0080"><Image resource="index_stick_short_medium" /><Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" /></PartImage>
+            </Group>
         </Group>
 
         <BooleanConfiguration id="show_batt">
@@ -100,15 +138,13 @@
         <BooleanConfiguration id="smooth_sec">
             <BooleanOption id="TRUE">
                 <AnalogClock x="0" y="0" width="450" height="450">
-                    <HourHand resource="hour_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
+                    <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
                         <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
                     </HourHand>
-
-                    <MinuteHand resource="min_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
+                    <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
                         <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
                     </MinuteHand>
-
-                    <SecondHand resource="sec_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
+                    <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
                         <Variant mode="AMBIENT" target="alpha" value="0" />
                         <Sweep frequency="15" />
                     </SecondHand>
@@ -117,15 +153,13 @@
 
             <BooleanOption id="FALSE">
                 <AnalogClock x="0" y="0" width="450" height="450">
-                    <HourHand resource="hour_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
+                    <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
                         <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
                     </HourHand>
-
-                    <MinuteHand resource="min_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
+                    <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
                         <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
                     </MinuteHand>
-
-                    <SecondHand resource="sec_classic" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
+                    <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
                         <Variant mode="AMBIENT" target="alpha" value="0" />
                     </SecondHand>
                 </AnalogClock>
