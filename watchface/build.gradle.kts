@@ -19,7 +19,6 @@ android {
 
     }
 
-    // 🌟 徹底掃除 1: 警告が出ていた部分を最新の書き方(directories.clear)に修正
     sourceSets {
         getByName("main") {
             java.directories.clear()
@@ -28,7 +27,7 @@ android {
     }
     buildTypes {
         release {
-            isMinifyEnabled = true // 🌟 これをTRUEにして！
+            isMinifyEnabled = true
             isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -36,13 +35,13 @@ android {
             )
         }
     }
-    // 🌟 徹底掃除 2: 警告の出た renderScript を削除してクリーンに
+
     buildFeatures {
         buildConfig = false
         aidl = false
         resValues = false
     }
-    // 🌟 徹底掃除 3: 強制的にDEXとKotlin系を排除
+
     packaging {
         resources {
             excludes += "classes.dex"
@@ -54,6 +53,6 @@ android {
     }
     enableKotlin = false
 }
-// 🌟 徹底掃除 4: 念のためプロジェクトの libs フォルダを空にしする
+
 dependencies {
 }
