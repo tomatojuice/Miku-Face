@@ -45,7 +45,7 @@
     <Scene backgroundColor="#000000">
 
         <PartImage x="0" y="0" width="450" height="450" name="base_bg">
-            <Image resource="image_wave_mint" />
+            <Image resource="image_bg_miku" />
             <Variant mode="AMBIENT" target="alpha" value="0" />
         </PartImage>
 
@@ -133,36 +133,45 @@
                     </PartText>
                 </Group>
             </BooleanOption>
+            <!-- 💡 OSの仕様に合わせ、OFFの時の「空のグループ」を明記 -->
+            <BooleanOption id="FALSE">
+                <Group name="battery_group_off" x="0" y="0" width="1" height="1" />
+            </BooleanOption>
         </BooleanConfiguration>
 
         <BooleanConfiguration id="smooth_sec">
             <BooleanOption id="TRUE">
-                <AnalogClock x="0" y="0" width="450" height="450">
-                    <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
-                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
-                    </HourHand>
-                    <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
-                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
-                    </MinuteHand>
-                    <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
-                        <Variant mode="AMBIENT" target="alpha" value="0" />
-                        <Sweep frequency="15" />
-                    </SecondHand>
-                </AnalogClock>
+                <!-- 💡 AnalogClockをGroupで包み、再描画の安定性を向上 -->
+                <Group name="clock_smooth" x="0" y="0" width="450" height="450">
+                    <AnalogClock x="0" y="0" width="450" height="450">
+                        <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
+                            <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                        </HourHand>
+                        <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
+                            <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                        </MinuteHand>
+                        <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
+                            <Variant mode="AMBIENT" target="alpha" value="0" />
+                            <Sweep frequency="15" />
+                        </SecondHand>
+                    </AnalogClock>
+                </Group>
             </BooleanOption>
 
             <BooleanOption id="FALSE">
-                <AnalogClock x="0" y="0" width="450" height="450">
-                    <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
-                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
-                    </HourHand>
-                    <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
-                        <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
-                    </MinuteHand>
-                    <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
-                        <Variant mode="AMBIENT" target="alpha" value="0" />
-                    </SecondHand>
-                </AnalogClock>
+                <Group name="clock_step" x="0" y="0" width="450" height="450">
+                    <AnalogClock x="0" y="0" width="450" height="450">
+                        <HourHand resource="hour_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.0]">
+                            <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                        </HourHand>
+                        <MinuteHand resource="min_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.1]">
+                            <Variant mode="AMBIENT" target="tintColor" value="#FFFFFF" />
+                        </MinuteHand>
+                        <SecondHand resource="sec_modern" x="200" y="0" width="50" height="450" pivotX="0.5" pivotY="0.5" tintColor="[CONFIGURATION.hand_theme.2]">
+                            <Variant mode="AMBIENT" target="alpha" value="0" />
+                        </SecondHand>
+                    </AnalogClock>
+                </Group>
             </BooleanOption>
         </BooleanConfiguration>
 

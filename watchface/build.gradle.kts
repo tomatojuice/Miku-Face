@@ -14,8 +14,8 @@ android {
         applicationId = "jp.ne.sakura.tomatojuice.mikuface"
         minSdk = 34
         targetSdk = 36
-        versionCode = 10000014
-        versionName = "2.1.3"
+        versionCode = 10000016
+        versionName = "2.2.0"
 
     }
 
